@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: kel <wjf1@meitu.com>
+ * @author: kel <genfaijuw@gmail.com>
  * @version: 1.0
  * @datetime: 2018/7/30 下午3:24
  */
