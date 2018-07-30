@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+   pastor.test:
+     image: deathillidan/laravel:latest
+     expose:
+       - 80
+     volumes:
+       - ".:/www/lumen_demo"
+     restart: always
+     environment:
+       VIRTUAL_HOST: api.lumen_demo.test
+     container_name: lumen_demo
+     entrypoint: "/www/lumen_demo/assets/provision/entrypoint.sh"
+     
+networks:
+   default:
+     external:
+      name: nginx-proxy
